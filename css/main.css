@@ -1,0 +1,386 @@
+/* fonts  */
+
+*{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, a{
+	font-family: Teko, Helvetica, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+p, blockquote, footer {
+	font-family: "Titillium Web", Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, a {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+li {
+	display: inline;
+}
+
+img {
+	max-width:100%;
+}
+
+/* header */ 
+
+header {
+	background-color: #ffffff;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	text-align: center;
+}
+
+.container {
+	max-width: 61%; /* 1170px*/
+	margin: 0 auto;
+
+}
+
+.logo {
+	float: left;
+	width: 70px;
+	height: 70px;
+}
+
+.logo img {
+	width: 100%
+	height: auto;
+}
+
+header nav {
+	float: right;
+}
+
+nav ul {
+  	margin-top: 1.563em;
+  	position: relative;
+}
+
+nav li {
+	padding: 0 2% 1.5em 2%;  
+}
+
+nav li:hover {
+	border-bottom: solid 0.188em #f63c3c;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: "Titillium Web";
+	font-size: 1em;
+	text-transform: none;
+	color: #a3a3a3;
+}
+
+nav a:hover {
+	color: #f63c3c;
+
+}
+
+/* main */
+
+main {
+	margin-top: 4.375em; /*70px*/
+}
+
+/* hero */
+
+.hero {
+	background: #000000 url(../img/hero.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: auto; /* 1080px, 67.5em*/
+	text-align: center;
+}
+
+.hero ul.webuild {
+	width: 61%;
+	margin: 0 auto 0 auto;
+	padding: 19.688em 0 17.188em 0;
+}
+
+.hero ul.webuild li.active {
+	display: inline-block;
+}
+.hero ul.webuild li {
+	display: none;
+}
+
+.hero h1 {
+	color: #ffffff;
+	font-size: 7.5em;
+	letter-spacing: 0.08em;
+}
+
+.hero p {
+	display: block;
+	position: relative;
+	width: 75%;
+	margin: 1.250em auto;
+	color: #dddcdd;
+	font-size: 1.375em; 
+	line-height: 1.2em;
+}
+
+.hero ul.webuild li.active a {
+	background: #ffffff;
+	color: #000000;
+	padding: 1em 3em;
+	display: inline-block;
+	margin: 3.125em;
+	letter-spacing: 0.25em;
+	font-size: 1.250em;
+	text-decoration: none;
+}
+
+nav.carousel {
+	position: relative;
+	width: 61%;
+	margin: 0 auto 2.500em auto;
+	text-align: center;
+}
+
+nav.carousel ul {
+	margin: 0 auto 0 auto;
+	padding-bottom: 2.500em;
+}
+nav.carousel li {
+	height: 0.250em;
+	width: 2.500em;
+	background-color: #fff;
+	opacity: 0.5;
+	display: inline-block;
+	padding: 0;
+}
+
+nav.carousel li.active {
+	opacity: 1;
+}
+
+nav.carousel li:hover {
+	opacity: 1;
+	border: 0;
+}
+
+/* My projects */
+
+h2 { 
+	margin-bottom: .875em;
+	text-align: center;
+	letter-spacing: .1em;
+}
+
+.clearfix:before, .clearfix:after{
+	content:"";
+	display: table;
+}
+
+.clearfix:after{
+	clear:both;
+}
+.projects { 
+	width: 100%;
+	text-align: center;
+}
+
+.projects .container {
+	max-width: 100%;
+}
+.projects .container article {
+	width: 48%;
+}
+
+.projects .container article.left {
+	float: left;
+	margin: 0 .666665% 0 1.33333%;
+	text-align: center;
+}
+
+.projects .container article.right {
+	float: right;
+	margin: 0 1.33333% 0 .666665%;
+	text-align: center;
+}
+
+.description {
+	display: inline-block;
+	width: 65%;
+	margin: 1.750em 0 2.188em 0;
+}
+
+.description h3 {
+	font-size: 1.875em;
+	letter-spacing: 0.063em;
+}
+.description p {
+	font-size: 0.875em;
+	color: #8c8c8c;
+	line-height: 1.250em;
+}
+
+
+figure {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+figcaption {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #f63c3c;
+	border: 0.625em solid #000;
+	color: white;
+	font-size: 1.500em;
+}
+ 
+ figcaption time {
+ 	display: block;
+ 	margin-top: 20%;
+ }
+
+ figcaption p {
+ 	margin: 8% auto;
+ 	font-family: teko, sans-serif;
+ 	font-size: 0.85em;
+ 	text-transform: uppercase;
+ }
+
+ figure:hover figcaption{
+ 	display: block;
+ }
+
+button {
+	padding-bottom: 0.5em;
+	background-color: #fff;
+	border: none;
+	border-bottom: #f63c3c solid 0.275em;
+	margin: 1em auto 3.750em auto;
+	color: #f63c3c;
+	font-family: teko, sans-serif;
+	font-weight: 300;
+	font-size: 1.250em;
+	text-transform: uppercase;
+}
+
+/* Showcase */
+
+.showcase {
+	background-color: #f63c3c;
+	padding: 3.750em 0 3.125em 0;
+	text-align: center;
+}
+
+.showcase h2 {
+	margin-bottom: 0.15em;
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: .1em;
+}
+
+.showcase p {
+	color: #fba0a0;
+	font-size: 1em;
+	font-family: Roboto, sans-serif;
+}
+
+.showcase button {
+	width: 14%;
+	padding: 0.5em;
+	border: none;
+	margin-top: 0.75em;
+	margin-bottom: 0px;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	font-size: 1.250em;
+	font-family: teko, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.showcase button:hover {
+	color: #f63c3c;
+}
+
+/* Stay connected */
+
+aside {
+	width: 100%;
+	padding-top: 4em;
+	padding-bottom: 3.625em;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #fafafa;
+}
+
+aside h2 {
+	text-align: left;
+}
+
+aside p {
+	font-size: 1em;
+	color: #8c8c8c;
+}
+
+aside ul {
+	margin-top: 3.750em;
+}
+
+aside li {
+	display: inline-block;
+	padding: 5%;
+	width: 23%;
+	margin-right: 1%;
+	background-color: #30282a;
+	text-align: center;
+}
+
+aside ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+i.fa {
+	font-size: 2.813em;
+}
+
+aside li p {
+	margin-top: 0.5em;
+	font-size: 1.875em;
+	font-family: Teko, sans-serif;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+/* footer */
+
+footer {
+	padding: 2em 0 3em 0;
+	font-size: 0.813em;
+	color: #8e8e8e;
+}
+
+
+
+
+
+
